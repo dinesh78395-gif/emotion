@@ -41,7 +41,7 @@ const MODELS_PATH = '/models'
 // Module-level cache so models are only fetched once per page session
 // ---------------------------------------------------------------------------
 
-let faceapiModule: typeof import('@vladmandic/face-api') | null = null
+let faceapiModule: typeof import('face-api.js') | null = null
 let modelsLoaded = false
 
 // ---------------------------------------------------------------------------
@@ -139,7 +139,7 @@ export function useDetectionEngine(): UseDetectionEngineReturn {
       try {
         // Lazy-import face-api.js only on first call
         if (!faceapiModule) {
-          faceapiModule = await import('@vladmandic/face-api')
+          faceapiModule = await import('face-api.js')
         }
 
         const faceapi = faceapiModule
