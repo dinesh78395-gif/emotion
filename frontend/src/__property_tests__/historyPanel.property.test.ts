@@ -3,7 +3,7 @@
  * Feature: beauty-insight-studio
  */
 
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import * as fc from 'fast-check'
 import { EMOTION_LABELS } from '../utils/emotionUtils'
 import type { EmotionLabel, EmotionLog } from '../types'

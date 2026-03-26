@@ -63,7 +63,7 @@ describe('P5: POST /log payload always includes emotion and ISO 8601 timestamp',
 // Feature: beauty-insight-studio, Property 1: Detection interval floor
 // ---------------------------------------------------------------------------
 
-import { EMOTION_LABELS, isValidEmotionLabel } from '../utils/emotionUtils'
+import { isValidEmotionLabel } from '../utils/emotionUtils'
 
 /**
  * Property 1: Detection interval floor
